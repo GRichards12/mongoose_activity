@@ -33,3 +33,28 @@ exports.deleteOne = async (titleToDelete) => {
         console.log(error);
     }
 };
+exports.filterDirector = async (filter) => {
+    try{
+        return Movie.find(filter);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+exports.filterActor = async (filter) => {
+    try{
+        return Movie.find(filter);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+exports.filterRating = async (filter) => {
+    try{
+        return await Movie.find(filter);
+       
+    }
+    catch(error){
+        console.log(error);
+    }
+}
